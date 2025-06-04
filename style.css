@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    background-color: white;
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    position: relative;
+}
+#heroimage {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 50% 20%;
+    display: block;
+    filter: brightness(0.8);
+}
+#header-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 9vh;
+    display: inline-block;
+    margin: 10px 50px;
+    transition: 0.3s ease;
+}
+#header-logo:hover {
+    transform: scale(1.1);
+}
+.button-erdekel {
+    color: black;
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+}
+.button-erdekel-container:hover {
+    background-color: #e0ccbe;
+    cursor: pointer;
+}
+.button-erdekel-container {
+    position: absolute;
+    top: 1vh;
+    right: 6vh; 
+    border: none;
+    background-color: #e8d3c9;
+    padding: 15px 25px;
+    border-radius: 30px;
+}
+.heroimg h1 {
+    position: absolute;
+    top: 7.5rem;
+    left: 6.5vh;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Archivo Black", sans-serif;
+    font-size: calc(30px + 1vw);
+    
+}
+main {
+    width: 94%;
+    margin: auto;
+    height: auto;
+    margin-bottom: 3rem;
+}
+.warning {
+    width: inherit;
+    margin: 4rem auto;
+    height: auto;
+    justify-self: center;
+}
+.warning h1 {
+    text-transform: uppercase;
+    font-family: "Archivo Black", sans-serif;
+    text-align: center;
+    font-size: 2.9vw;
+}
+.bed-under-window {
+    width: 100%;
+    height: 40rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.bed-under-window img {
+    width: 90vw;
+    height: 38rem;
+    object-fit: cover;
+    object-position: center; 
+}
+.house-container {
+    position: relative;
+}
+.house-container-bg {
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    background-image: url("images/house-background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.white-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.houses {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+.house-card img:hover {
+    filter: brightness(1.2);
+}
+.house-card img {
+    width: 50vw;
+    animation: zoom 4s infinite ease-in-out;
+    transition: 0.3s ease;
+}
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.house-card p {
+    font-family: "Archivo Black", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: calc(15px + 2.7vw);
+}
+.outside-container {
+    margin: 4rem auto;
+    width: 94%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    place-items: center;
+}
+.outside-container img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 70% 70%;
+    display: block;
+}
+.about-container {
+    width: 94%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    gap: 10vw;
+}
+.about-text h2 {
+    font-family: "Archivo Black", sans-serif;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    font-size: calc(20px + 1vw);
+}
+.about-text p {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: calc(10px + 0.8vw);
+    line-height: 1.5;
+}
+aside.erdekel p {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: calc(10px + 0.5vw);
+    margin: 1.5rem 0;
+}
+.button-erdekel-container-aside {
+    position: relative;
+    border: none;
+    background-color: black;
+    padding: 15px 25px;
+    border-radius: 30px;
+    width: 80%;
+    font-size: calc(10px + 0.7vw);
+    text-align: center;
+    height: 20%;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.button-erdekel-container-aside:hover {
+    background-color: #4d4d4d;
+}
+.button-about-erdekel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 0 100%;
+}
+.outside-total-container {
+    width: 94%;
+    height: auto;
+    margin: 5rem auto;
+}
+.outside-total-container img {
+    width: 100%;
+    height: calc(100px + 35vw);
+    object-fit: cover;
+    display: block;
+    filter: contrast(0.7);
+}
+.bathroom img {
+    object-position: top;
+}
+.bedroom img {
+    object-position: 50%;
+}
+.form-interested {
+    width: 100%;
+    height: auto;
+    background-color: #e0ccbe;
+    padding-bottom: 50px;
+}
+.form-interested form h2 {
+    padding: 7rem 0;
+    padding-bottom: 3rem;
+    font-family: "Archivo Black", sans-serif;
+    font-size: calc(25px + 1vw);
+    text-align: center;
+}
+.form-interested form {
+    width: 40%;
+    min-width: 300px;
+    margin: 0 auto;
+}
+input, select, textarea {
+    width: 100%;
+    height: 6vh;
+    display: block;
+    margin: 10px 0;
+    font-size: calc(8px + 0.8vw);
+    font-family: "Space Grotesk", sans-serif;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+textarea {
+    height: 15vh;
+    padding-top: 5px;
+    resize: vertical;
+}
+label {
+    font-family: "Space Grotesk", sans-serif;
+    display: block;
+    font-size: calc(8px + 0.8vw);
+    margin-top: 20px;
+}
+input[type="submit"] {
+    width: 20%;
+    min-width: 100px;
+    padding: 0;
+    height: 7vh;
+    max-height: 50px;
+    border-radius: 30px;
+    color: #e0ccbe;
+    background-color: black;
+    font-weight: 600;
+    font-size: calc(15px + 0.5vw); 
+    border: none;
+    transition: 0.2s ease;
+}
+input[type="submit"]:hover {
+    background-color: rgb(54, 54, 54);
+}
+
+@media (max-width: 584px) {
+    .houses {
+        flex-direction: column;
+        gap: 10vh;
+    }
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+    .button-erdekel-container-aside {
+        max-width: 50%;
+    }
+}
+@media (max-width: 478px) {
+    .outside-container {
+        grid-template-columns: 1fr;
+    }
+    .outside-container img {
+        height: 30vh;
+    }
+    .bed-under-window {
+        display: none;
+    }
+}

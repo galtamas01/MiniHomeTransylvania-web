@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+   width: 100%; 
+}
+header {
+    height: 20vh;
+}
+#header-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 9vh;
+    display: inline-block;
+    margin: 10px 50px;
+}
+.button-erdekel {
+    color: black;
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+}
+.button-erdekel-container:hover {
+    background-color: rgba(255, 255, 255, 0.592);
+    cursor: pointer;
+
+}
+.button-erdekel-container {
+    position: absolute;
+    top: 1vh;
+    right: 6vh; 
+    border: none;
+    background-color: rgba(255, 255, 255, 0.884);
+    padding: 15px 25px;
+    border-radius: 30px;
+    transition: 0.2s ease;
+}
+.triangle {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 6vw;
+    height: 50px;
+    z-index: 5;
+}
+.triangle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent; 
+    border-top: 50px solid rgba(255, 255, 255, 0.884);
+}
+.triangle img {
+    width: 30%;
+    min-width: 20px;
+    position: absolute;
+    top: 0;
+    right: 2px;
+}
+.content-body {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+.content-body::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    width: 110%;
+    height: 110%;
+    margin-left: 0;
+    background-image: url("/images/protruding-squares.svg")/*url("/images/house-background.jpeg")*/;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.4);
+    z-index: -1;
+}
+.info {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+.general-data h2 {
+    font-family: "Archivo Black", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    margin: 3rem 0;
+    margin-top: 0;
+    font-size: calc(18px + 2vw);
+}
+ul.parameters {
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: calc(10px + 0.7vw);
+}
+ul.parameters li {
+    padding: 0.5rem 0;
+    margin-left: 10px;
+}
+.blueprint {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.blueprint img {
+    width: 50%;
+    min-width: 250px;
+    height: auto;
+    display: block;
+    border: 5px solid black;
+    border-radius: 45px
+}
+.video {
+    width: 94%;
+    margin: 15vh auto;
+    display: flex;
+    justify-content: center;
+}
+.video video {
+    width: 80%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+.info-rooms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    height: auto;
+    margin: 5rem 0;
+}
+.roomcard {
+    width: 90%;
+    max-width: 500px;
+    height: 80%;
+    color: white;
+    /*background-color: #8a3116;*/
+    backdrop-filter: blur(10px) brightness(1.4);
+    box-shadow: 0 0 20px #794331;
+    padding: 1rem;
+    border-radius: 20px;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+.roomcard h2 {
+    font-family: "Archivo Black", sans-serif;
+    margin: 1rem 0;
+    font-size: calc(16px + 1.5vw);
+    text-shadow: 0 0 10px black;
+}
+.roomcard ul {
+    font-family: "Space Grotesk", sans-serif;
+    padding: 0 1rem;
+}
+.roomcard li {
+    margin: 0 1rem;
+    font-size: calc(10px + 0.7vw);
+    word-wrap: break-word;
+}
+@media (max-width: 515px) {
+    .info {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .blueprint {
+        justify-content: center;
+    }
+    .roomcard {
+        max-width: 80vw;
+    }
+}
+@media (max-width: 747px) {
+    .info-rooms {
+        grid-template-columns: 1fr;
+    }
+    .video video {
+        width: 90%;
+    }
+}
